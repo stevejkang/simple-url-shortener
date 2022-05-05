@@ -1,0 +1,14 @@
+name = "simple-url-shortener"
+type = "javascript"
+
+account_id = "1726d78a136d91dad469efdc39410ad9"
+workers_dev = true
+route = ""
+zone_id = ""
+compatibility_date = "2022-04-21"
+
+[build]
+command = 'yarn esbuild src/worker.ts --bundle --outfile=dist/worker.js --format=esm'
+
+[build.upload]
+format = 'service-worker'
