@@ -7,6 +7,11 @@ route = ""
 zone_id = ""
 compatibility_date = "2022-04-21"
 
+[[kv_namespaces]]
+binding = 'INDEX'
+id = '4d0c33fde9f840119bcfe4166abb6c2b'
+preview_id = '4d0c33fde9f840119bcfe4166abb6c2b'
+
 [build]
 command = 'yarn esbuild src/worker.ts --bundle --outfile=dist/worker.js --format=esm'
 
